@@ -1,11 +1,11 @@
 const { Given, Then } = require("cucumber");
 const { assert } = require("chai");
 
-Given("I visit the webdriver.io page", function() {
-  browser.url('https://webdriver.io');
+Given("I visit the dashboard page", function() {
+  browser.url('http://localhost:9077');
 });
 
 Then("it should have the right title", function() {
   const title = browser.getTitle();
-  assert.strictEqual(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js');
+  assert.strictEqual(title, 'VR.World');
 });

@@ -69,7 +69,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'error',
     //
     // Set specific log levels per logger
     // loggers:
@@ -119,7 +119,7 @@ exports.config = {
     // before running any tests.
     framework: 'cucumber',
     cucumberOpts: {
-      require: [path.join(__dirname, 'features', 'steps', 'steps.js')],
+      require: [path.join(__dirname, 'features', 'steps', '*.js')],
     },
     //
     // The number of times to retry the entire specfile when it fails as a whole
