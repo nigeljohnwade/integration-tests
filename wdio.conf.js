@@ -119,7 +119,7 @@ exports.config = {
     // before running any tests.
     framework: 'cucumber',
     cucumberOpts: {
-      require: [path.join(__dirname, 'features', 'steps', '*.js')],
+        require: [path.join(__dirname, 'features', 'step_definitions', 'steps.js')],
         backtrace: true,
     },
     //
@@ -250,10 +250,10 @@ exports.config = {
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
     /**
-    * Gets executed when a refresh happens.
-    * @param {String} oldSessionId session ID of the old session
-    * @param {String} newSessionId session ID of the new session
-    */
+     * Gets executed when a refresh happens.
+     * @param {String} oldSessionId session ID of the old session
+     * @param {String} newSessionId session ID of the new session
+     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
 }
